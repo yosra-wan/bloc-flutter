@@ -23,7 +23,7 @@ class _ButtonsWidgetState extends State<ButtonsWidget> {
           tooltip: 'Increment',
           child: const Icon(Icons.add),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         FloatingActionButton(
           onPressed: () {
             BlocProvider.of<CounterBloc>(context).add(DecrementEvent());
